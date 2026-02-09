@@ -1,6 +1,3 @@
-// guestbook.c - Fixed: Use cgiFormInteger() instead of cgiParamGet()
-// Compile: gcc -Wall -std=c99 -O2 -o guestbook.cgi guestbook.c -lcgic -lsqlite3
-
 #include <cgic.h>
 #include <sqlite3.h>
 #include <string.h>
