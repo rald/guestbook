@@ -1,10 +1,10 @@
-all: libcgic.a libsqlite3.a guestbook.cgi
+all: cgic/libcgic.a sqlite3/libsqlite3.a guestbook.cgi
 
-libcgic.a: cgic/cgic.c cgic/cgic.h
+cgic/libcgic.a: cgic/cgic.c cgic/cgic.h
 	gcc -c cgic/cgic.c -o cgic/cgic.o
 	ar rcs cgic/libcgic.a cgic/cgic.o
 
-libsqlite3.a: sqlite3/sqlite3.c sqlite3/sqlite3.h
+sqlite3/libsqlite3.a: sqlite3/sqlite3.c sqlite3/sqlite3.h
 	gcc -c sqlite3/sqlite3.c -o sqlite3/sqlite3.o
 	ar rcs sqlite3/libsqlite3.a sqlite3/sqlite3.o
 

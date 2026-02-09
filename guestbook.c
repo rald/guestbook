@@ -219,7 +219,7 @@ int cgiMain(void) {
     fprintf(cgiOut, "* {font-family: dejavu sans mono;}\n");
     fprintf(cgiOut, "body{max-width:700px;margin:2em auto;padding:1em;background:#f5f5f5;}\n");
     fprintf(cgiOut, "form input,textarea{width:100%%;box-sizing:border-box;margin:5px 0;padding:10px;border:1px solid #ddd;border-radius:4px;}\n");
-    fprintf(cgiOut, "textarea{height:80px;}\n");
+    fprintf(cgiOut, "textarea{height:80px;resize:none;}\n");
     fprintf(cgiOut, "ul{margin:1em 0;padding-left:2em;}\n");
     fprintf(cgiOut, "li{margin:1em 0;padding:1em;border-left:4px solid #007cba;background:white;border-radius:4px;}\n");
     fprintf(cgiOut, "</style></head><body>\n");
